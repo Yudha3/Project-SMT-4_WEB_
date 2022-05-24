@@ -1,0 +1,522 @@
+body {
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  color: #2F7FF6;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.btn-navbar-right {
+  margin-top: -10px !important;
+  margin-bottom: -8px !important;
+  margin-right: -18px !important;
+  height: 70px;
+  border-radius: 0px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #0c5ace;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #2F7FF6 !important;
+}
+
+.btn-login {
+  background-color: #01388a;
+  color: #ffffff;
+}
+
+.btn-login:hover {
+  background-color: #3d74c7;
+  color: #ffffff;
+}
+
+header {
+  padding: 180px 0px 165px;
+  margin-top: -70px;
+  background-image: url("../images/unsplash2.jpg");
+  background-size: cover;
+}
+
+header h1, header p {
+  color: #ffffff;
+}
+
+header h1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+header p {
+  font-size: 20px;
+}
+
+header .btn-get-started {
+  background-color: #46e0f5;
+  color: #ffffff;
+}
+
+header .btn-get-started:hover {
+  background-color: #04a0b4;
+  color: #ffffff;
+}
+
+.section-popular {
+  min-height: 540px;
+  margin-top: -50px;
+  margin-bottom: -230px;
+}
+
+.section-popular .section-popular-heading {
+  margin-top: 100px;
+}
+
+.section-popular .section-popular-heading h2 {
+  color: #04987D;
+}
+
+.section-popular .section-popular-heading p {
+  color: #000;
+}
+
+.section-popular .section-popular-heading h2 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+}
+
+.section-popular .section-popular-heading p {
+  font-size: 20px;
+}
+
+.section-popular-content .section-popular-furniture .card-furniture {
+  margin-top: 120px;
+  min-height: 380px;
+  background-color: #000;
+  color: #ffffff;
+  padding: 30px;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.section-popular-content .section-popular-furniture .furniture-nama {
+  font-size: 26px;
+  color: #ffffff;
+}
+
+.section-popular-content .section-popular-furniture .furniture-button .btn-furniture-details {
+  background-color: #46e0f5;
+  color: #ffffff;
+}
+
+.section-popular-content .section-popular-furniture .furniture-button .btn-furniture-details:hover {
+  background-color: #04a0b4;
+  color: #ffffff;
+}
+
+.section-popular-content1 .section-popular-furniture1 .card-furniture1 {
+  margin-top: 50px;
+  min-height: 380px;
+  background-color: #fff;
+  border: #000;
+  color: #ffffff;
+  padding: 30px;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.section-popular-content1 .section-popular-furniture1 .furniture-nama1 {
+  font-size: 26px;
+  color: #ffffff;
+}
+
+.section-popular-content1 .section-popular-furniture1 .furniture-button .btn-furniture-details {
+  background-color: #46e0f5;
+  color: #ffffff;
+}
+
+.section-popular-content1 .section-popular-furniture1 .furniture-button .btn-furniture-details:hover {
+  background-color: #04a0b4;
+  color: #ffffff;
+}
+
+.section-experience {
+  background-color: #0c5ace;
+  background-size: cover;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.while {
+  margin-top: 30px;
+}
+
+.while h2 {
+  color: #ffffff;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+}
+
+.section-stats {
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+.section-stats .stats-detail h2 {
+  font-size: 30px;
+}
+
+.section-stats .stats-detail p {
+  font-size: 20px;
+}
+
+.section-gambar .card-furniture {
+  margin-top: -300px;
+  min-height: 380px;
+  background-color: #000;
+  color: #ffffff;
+  padding: 30px;
+  background-size: cover;
+  margin-bottom: 20px;
+  position: relative;
+  right: -500px;
+}
+
+.section-testimonial-heading {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f7f9ff));
+  background: linear-gradient(#fff 0%, #f7f9ff 100%);
+  padding-top: 50px;
+  min-height: 500px;
+}
+
+.section-testimonial-heading h2 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.section-testimonial-heading p {
+  font-size: 20px;
+}
+
+.section-testimonial-content {
+  margin-top: -300px;
+  padding-bottom: 50px;
+}
+
+.section-testimonial-content .card-testimonial {
+  padding: 40px 20px 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.section-testimonial-content .card-testimonial .testimonial-content {
+  min-height: 280px;
+}
+
+.section-testimonial-content .card-testimonial h3 {
+  font-size: 20px;
+}
+
+.section-testimonial-content .card-testimonial .testimonial {
+  font-weight: 200;
+  font-size: 15px;
+  color: #04a0b4;
+  min-height: 120px;
+}
+
+.section-testimonial-content .card-testimonial .produk {
+  font-weight: normal;
+  font-size: 20px;
+  color: #04987D;
+}
+
+.section-testimonial-content .card-testimonial hr {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.section-testimonial-content .btn-get-started {
+  background-color: #46e0f5;
+  color: #ffffff;
+}
+
+.section-testimonial-content .btn-get-started:hover {
+  background-color: #04a0b4;
+  color: #ffffff;
+}
+
+.section-testimonial-content .btn-need-help {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+.section-testimonial-content .btn-need-help:hover {
+  background-color: #6b6969;
+  color: #fff;
+}
+
+.section-testimonial-content1 {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-testimonial-content1 .card-testimonial1 {
+  padding: 40px 20px 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.section-testimonial-content1 .card-testimonial1 .testimonial-content1 {
+  min-height: 280px;
+}
+
+.section-testimonial-content1 .card-testimonial1 h3 {
+  font-size: 20px;
+}
+
+.section-testimonial-content1 .card-testimonial1 p {
+  font-size: 16px;
+}
+
+.section-testimonial-content1 .card-testimonial1 .testimonial1 {
+  font-weight: 200;
+  font-size: 15px;
+  color: #04a0b4;
+}
+
+.section-testimonial-content1 .card-testimonial1 .produk1 {
+  font-weight: normal;
+  font-size: 20px;
+  color: #04987D;
+}
+
+.section-testimonial-content1 .card-testimonial1 hr {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.section-testimonial-content1 .btn-get-started {
+  background-color: #46e0f5;
+  color: #ffffff;
+}
+
+.section-testimonial-content1 .btn-get-started:hover {
+  background-color: #04a0b4;
+  color: #ffffff;
+}
+
+.section-testimonial-content1 .btn-need-help {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+.section-testimonial-content1 .btn-need-help:hover {
+  background-color: #6b6969;
+  color: #fff;
+}
+
+.section-footer p {
+  font-size: 15px;
+  color: #6b6969;
+}
+
+.section-footer a {
+  color: #6b6969;
+}
+
+.section-footer a:hover {
+  color: #04987D;
+}
+
+.section-footer li {
+  color: #6b6969;
+}
+
+.section-details-header {
+  min-height: 310px;
+  background: #f2f2f2;
+  margin-top: -70px;
+}
+
+.section-details-content {
+  margin-top: -210px;
+  min-height: 100vh;
+}
+
+.section-details-content .breadcrumb {
+  background-color: transparent;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+
+.section-details-content .breadcrumb-item.active {
+  font-weight: bold;
+  color: #0c5ace;
+}
+
+.section-details-content .card-details {
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.section-details-content .card-details h1 {
+  font-size: 24px;
+}
+
+.section-details-content .card-details h2 {
+  font-size: 18px;
+}
+
+.section-details-content .card-details p {
+  font-size: 16px;
+  color: #000;
+}
+
+.section-details-content .card-details .product-finaly th {
+  font-weight: 400;
+  font-size: 16px;
+  color: #0c5ace;
+}
+
+.section-details-content .card-details .product-finaly td {
+  font-weight: 300;
+  font-size: 16px;
+  color: #6b6969;
+}
+
+.section-details-content .card-details .payment-instructions {
+  font-weight: 300;
+  font-size: 14px;
+  color: #6b6969;
+}
+
+.section-details-content .card-details .bank .bank-item h3 {
+  font-size: 18px;
+  color: #04a0b4;
+  margin-bottom: 0px;
+}
+
+.section-details-content .card-details .bank .bank-item p {
+  margin-bottom: 0px;
+}
+
+.section-details-content .card-details .bank .bank-item .description {
+  margin-left: 10px;
+  overflow: hidden;
+  float: left;
+}
+
+.section-details-content .card-details .bank .bank-item .description h3 {
+  font-weight: 400;
+}
+
+.section-details-content .card-details .bank .bank-item .description p {
+  font-weight: normal;
+  font-size: 16px;
+  color: #04a0b4;
+}
+
+.section-details-content .card-details .bank .bank-image {
+  width: 45px;
+  height: 45px;
+  float: left;
+}
+
+.section-details-content .card-right {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom: 0px;
+}
+
+.section-details-content .features {
+  margin-top: 20px;
+}
+
+.section-details-content .features h3 {
+  font-size: 16px;
+  color: #01388a;
+  margin-bottom: 0px;
+}
+
+.section-details-content .features p {
+  margin-bottom: 0px;
+}
+
+.section-details-content .features .description {
+  margin-left: 10px;
+  overflow: hidden;
+  float: left;
+}
+
+.section-details-content .features .features-image {
+  width: 45px;
+  height: 45px;
+  float: left;
+}
+
+.section-details-content .gallery .xzoom-container {
+  display: block;
+}
+
+.section-details-content .gallery .xzoom-container .xzoom {
+  width: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 10px;
+}
+
+.section-details-content .gallery .xzoom-container .xactive {
+  border: 4px solid #0c5ace;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.section-details-content .join-container {
+  margin-top: -16px;
+}
+
+.section-details-content .btn-buy-now {
+  background-color: #46e0f5;
+  color: #fff;
+  border-radius: 0px;
+  font-weight: bold;
+}
+
+.section-details-content .btn-buy-now:hover {
+  background-color: #04a0b4;
+  color: #000;
+  font-weight: bold;
+}
+
+.section-success {
+  height: 90vh;
+}
+
+.section-success h1 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #0c5ace;
+}
+
+.section-success p {
+  font-weight: 300;
+  font-size: 18px;
+  color: #6b6969;
+}
+
+.section-success .btn-home-page {
+  border-radius: 4px;
+  background-color: #04a0b4;
+  color: #fff;
+}
+
+.section-success .btn-home-page:hover {
+  background-color: #46e0f5;
+  color: #000;
+}
+/*# sourceMappingURL=main.css.map */

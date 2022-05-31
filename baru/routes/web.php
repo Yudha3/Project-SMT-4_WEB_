@@ -22,3 +22,23 @@ Route::get('/login', function () {
 Route::get('/dashboard', function () {
     return view('index');
 });
+
+Route::get('/product', function () {
+    return view('product');
+});
+
+Route::get('/mitra', function () {
+    return view('mitra');
+});
+
+Route::get('/reseller', function () {
+    return view('reseller');
+});
+
+Route::get('/transaksimasuk', function () {
+    return view('transaksimasuk');
+});
+
+Route::get('/transaksikeluar', function () {
+    return view('transaksikeluar');
+});

@@ -5,37 +5,37 @@
     </div>
     <ul class="nav-links">
       <li>
-        <a href="index.php" class="active">
+        <a href="/dashboard" class="">
           <i class='bx bx-grid-alt'></i>
           <span class="links_name">Dashboard</span>
         </a>
       </li>
       <li>
-        <a href="barang.php" class="">
+        <a href="/product" class="">
           <i class='bx bx-box'></i>
           <span class="links_name">Product</span>
         </a>
       </li>
       <li>
-        <a href="mitra.php" class="">
+        <a href="/mitra" class="">
           <i class='bx bx-badge-check'></i>
           <span class="links_name">Mitra</span>
         </a>
       </li>
       <li>
-        <a href="reseller.php" class="">
+        <a href="/reseller" class="">
           <i class='bx bxs-collection'></i>
           <span class="links_name">Reseller</span>
         </a>
       </li>
       <li>
-        <a href="barangMasuk.php">
+        <a href="/transaksimasuk">
           <i class='bx bxs-cart-add'></i>
           <span class="links_name">Transaksi Masuk</span>
         </a>
       </li>
       <li>
-        <a href="barangKeluar.php" class="">
+        <a href="/transaksikeluar" class="">
           <i class='bx bxs-cart-download'></i>
           <span class="links_name">Transaksi Keluar</span>
         </a>

@@ -24,12 +24,15 @@ class ProductRequest extends FormRequest
     public function rules()
     {
         return [
-            'nama_brg' => 'required|max:255',
-            'tgl_mskBrg' => 'required|date',
-            'hrg_beli' => 'required|integer',
-            'hrg_jual' => 'required|integer',
-            'stok' => 'required|integer',
-            'deskripsi' => 'required'
+            'title' => 'required|max:255',
+            'description' => 'required',
+            'materials' => 'required|max:255',
+            'price_buy' => 'required|integer',
+            'price' => 'required|integer',
+            'stock' => 'required|integer',
+            'weight' => 'required|integer',
+            'sold' => 'required|integer',
+            'image' => 'required|image'
         ];
     }
 }

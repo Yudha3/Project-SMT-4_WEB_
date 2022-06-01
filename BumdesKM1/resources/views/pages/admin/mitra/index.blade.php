@@ -23,6 +23,7 @@
                             <th>Alamat</th>
                             <th>Nomer Telepon</th>
                             <th>Tanggal Gabung</th>
+                            <th>Gambar</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -30,10 +31,13 @@
                         @forelse ($items as $item)
                             <tr>
                                 <td>{{ $item->id }}</td>
-                                <td>{{ $item->nm_mitra }}</td>
+                                <td>{{ $item->nama_mtr }}</td>
                                 <td>{{ $item->alamat }}</td>
-                                <td>{{ $item->no_tlp }}</td>
+                                <td>{{ $item->no_telp }}</td>
                                 <td>{{ $item->tgl_gabung }}</td>
+                                <td>
+                                    <img src="{{ Storage::url($item->image) }}" alt="" style="width: 150px" class="img-thumbnail" />
+                                </td>
                                 <td>
                                     <a href="{{ route('mitra.edit', $item->id) }}" class="btn btn-info">
                                         <i class="fa fa-pencil-alt"></i>

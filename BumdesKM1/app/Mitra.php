@@ -11,7 +11,7 @@ class Mitra extends Model
     use SoftDeletes;
     
     protected $fillable = [
-        'nm_mitra', 'alamat', 'no_tlp', 'tgl_gabung'
+        'nama_mtr', 'alamat', 'no_telp', 'tgl_gabung', 'image'
     ];
 
     protected $hidden = [

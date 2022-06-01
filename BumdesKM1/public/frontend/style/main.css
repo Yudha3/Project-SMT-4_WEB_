@@ -77,7 +77,7 @@ header .btn-get-started:hover {
 }
 
 .section-popular .section-popular-heading h2 {
-  color: #04987D;
+  color: #04a0b4;
 }
 
 .section-popular .section-popular-heading p {
@@ -120,9 +120,9 @@ header .btn-get-started:hover {
 
 .section-popular-content1 .section-popular-furniture1 .card-furniture1 {
   margin-top: 50px;
-  min-height: 380px;
-  background-color: #fff;
-  border: #000;
+  min-height: 320px;
+  background-color: #ffffff;
+  border: 1px solid black;
   color: #ffffff;
   padding: 30px;
   background-size: cover;
@@ -131,12 +131,14 @@ header .btn-get-started:hover {
 
 .section-popular-content1 .section-popular-furniture1 .furniture-nama1 {
   font-size: 26px;
-  color: #ffffff;
+  color: #000;
+  margin-top: 20px;
 }
 
 .section-popular-content1 .section-popular-furniture1 .furniture-button .btn-furniture-details {
   background-color: #46e0f5;
   color: #ffffff;
+  margin-top: 20px;
 }
 
 .section-popular-content1 .section-popular-furniture1 .furniture-button .btn-furniture-details:hover {
@@ -223,9 +225,9 @@ header .btn-get-started:hover {
 }
 
 .section-testimonial-content .card-testimonial .testimonial {
-  font-weight: 200;
+  font-weight: 400;
   font-size: 15px;
-  color: #04a0b4;
+  color: #6b6969;
   min-height: 120px;
 }
 
@@ -266,27 +268,23 @@ header .btn-get-started:hover {
 }
 
 .section-testimonial-content1 .card-testimonial1 {
-  padding: 40px 20px 10px;
+  padding: 30px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
 .section-testimonial-content1 .card-testimonial1 .testimonial-content1 {
-  min-height: 280px;
+  min-height: 150px;
 }
 
 .section-testimonial-content1 .card-testimonial1 h3 {
-  font-size: 20px;
-}
-
-.section-testimonial-content1 .card-testimonial1 p {
-  font-size: 16px;
+  font-size: 24px;
 }
 
 .section-testimonial-content1 .card-testimonial1 .testimonial1 {
-  font-weight: 200;
-  font-size: 15px;
-  color: #04a0b4;
+  font-weight: 400;
+  font-size: 18px;
+  color: #6b6969;
 }
 
 .section-testimonial-content1 .card-testimonial1 .produk1 {
@@ -427,6 +425,15 @@ header .btn-get-started:hover {
   float: left;
 }
 
+.section-details-content .card-details .btn-add-now {
+  background-color: #071C4D;
+  color: #fff;
+}
+
+.section-details-content .card-details .btn-add-now:hover {
+  color: #fff;
+}
+
 .section-details-content .card-right {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -518,5 +525,45 @@ header .btn-get-started:hover {
 .section-success .btn-home-page:hover {
   background-color: #46e0f5;
   color: #000;
+}
+
+@media (min-width: 992px) {
+  .login-container {
+    background: -webkit-gradient(linear, left top, right top, color-stop(60%, #ffffff), color-stop(40%, #E4E6EB));
+    background: linear-gradient(90deg, #ffffff 60%, #E4E6EB 40%);
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.page-login {
+  height: 100vh;
+}
+
+.page-login .btn-login {
+  background-color: #01388a;
+  color: #ffffff;
+}
+
+.page-login .btn-login:hover {
+  background-color: #2F7FF6;
+  color: #000;
+}
+
+.page-login .section-left h1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: left;
+  color: #0c5ace;
+}
+
+.page-login .section-right a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  text-decoration: underline;
+  font-size: 16px;
+  text-align: center;
+  color: #979696;
 }
 /*# sourceMappingURL=main.css.map */

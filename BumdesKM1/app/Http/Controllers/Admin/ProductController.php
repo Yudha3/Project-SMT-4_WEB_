@@ -43,7 +43,10 @@ class ProductController extends Controller
     public function store(ProductRequest $request)
     {
         $data = $request->all();
-        $data['slug'] = Str::slug($request->nama_brg);
+        $data['slug'] = Str::slug($request->title);
+        $data['image'] = $request->file('image')->store(
+            'assets/gallery', 'public'
+        );
 
         Product::create($data);
         return redirect()->route('product.index');
@@ -85,7 +88,10 @@ class ProductController extends Controller
     public function update(ProductRequest $request, $id)
     {
         $data = $request->all();
-        $data['slug'] = Str::slug($request->nama_brg);
+        $data['slug'] = Str::slug($request->title);
+        $data['image'] = $request->file('image')->store(
+            'assets/gallery', 'public'
+        );
 
         $item = Product::findOrFail($id);
         $item->update($data);

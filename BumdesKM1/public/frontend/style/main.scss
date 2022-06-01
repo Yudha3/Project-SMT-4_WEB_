@@ -86,7 +86,7 @@ header {
         margin-top: 100px;
 
         h2 {
-            color: #04987D;
+            color: #04a0b4;
         }
 
         p {
@@ -140,9 +140,9 @@ header {
     .section-popular-furniture1 {
         .card-furniture1 {
             margin-top: 50px;
-            min-height: 380px;
-            background-color: #fff;
-            border: #000;
+            min-height: 320px;
+            background-color: #ffffff;
+            border: 1px solid black;
             color: #ffffff;
             padding: 30px;
             background-size: cover;
@@ -151,13 +151,15 @@ header {
 
         .furniture-nama1 {
             font-size: 26px;
-            color: #ffffff;
+            color: #000;
+            margin-top: 20px;
         }
 
         .furniture-button {
             .btn-furniture-details {
                 background-color: #46e0f5;
                 color: #ffffff;
+                margin-top: 20px;
 
                 &:hover {
                     background-color: #04a0b4;
@@ -251,9 +253,9 @@ header {
         }
 
         .testimonial {
-            font-weight: 200;
+            font-weight: 400;
             font-size: 15px;
-            color: #04a0b4;
+            color: #6b6969;
             min-height: 120px;
         }
         
@@ -295,26 +297,22 @@ header {
     padding-bottom: 50px;
 
     .card-testimonial1 {
-        padding: 40px 20px 10px;
+        padding: 30px;
         border-radius: 10px;
         margin-bottom: 20px;
 
         .testimonial-content1 {
-            min-height: 280px;
+            min-height: 150px;
         }
 
         h3 {
-            font-size: 20px;
-        }
-
-        p {
-            font-size: 16px;
+            font-size: 24px;
         }
 
         .testimonial1 {
-            font-weight: 200;
-            font-size: 15px;
-            color: #04a0b4;
+            font-weight: 400;
+            font-size: 18px;
+            color: #6b6969;
             
         }
         
@@ -468,6 +466,15 @@ header {
             }
         }
 
+        .btn-add-now {
+            background-color: #071C4D;
+            color: #fff;
+        
+            &:hover {
+              color: #fff;
+            }
+          }
+
     }
 
     .card-right {
@@ -478,6 +485,7 @@ header {
 
     .features {
         margin-top: 20px;
+        // margin: 20px;
 
         h3 {
             font-size: 16px;
@@ -561,6 +569,49 @@ header {
         &:hover {
             background-color: #46e0f5;
             color: #000;
+        }
+    }
+}
+
+.login-container{
+    @media (min-width: 992px) {
+        background: linear-gradient(90deg, #ffffff 60%, #E4E6EB 40%);
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.page-login {
+    height: 100vh;
+
+    .btn-login {
+        background-color: #01388a;
+        color: #ffffff;
+
+        &:hover {
+            background-color: #2F7FF6;
+            color: #000;
+        }
+    }
+
+    .section-left {
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            font-weight: bold;
+            font-size: 50px;
+            text-align: left;
+            color: #0c5ace;
+        }
+    }
+
+    .section-right {
+        a {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            text-decoration: underline;
+            font-size: 16px;
+            text-align: center;
+            color: #979696;
         }
     }
 }

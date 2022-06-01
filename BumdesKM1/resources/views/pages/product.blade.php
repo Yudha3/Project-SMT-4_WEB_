@@ -33,7 +33,7 @@
                                     aria-label="Search" aria-describedby="basic-addon2">
                                 <div class="input-group-append">
                                     <button class="btn btn-primary" type="button">
-                                        <i class="fas fa-search fa-sm"></i>
+                                        <i class="fa fa-search fa-sm"></i>
                                     </button>
                                 </div>
                             </div>
@@ -44,62 +44,31 @@
             </div>
             
             <section class="section-popular-content1" id="popularContent">
+                
                 <div class="container">
-                    <div class="section-popular-furniture1 row justify-content-center">
+                    <div class="section-popular-furniture1 row justify-content-left">
+                        @foreach ($items as $item)
                        <div class="col-sm-6 col-md-4 col-lg-3">
                            <div class="card-furniture1 text-center d-flex flex-column"
-                           style="background-image: url('frontend/images/kursi.jpg');">
+                           >
+                           <img src="{{ url('storage') }}/{{ $item->image }}" alt="">
                                <div class="furniture-nama1">
-                                   KURSI
+                                    {{ $item->title }}
                                </div>
                                <div class="furniture-button mt-auto">
-                                   <a href="{{ route('detail') }}" class="btn btn-furniture-details px-4">
+                                   <a href="{{ route('detail', $item->id) }}" class="btn btn-furniture-details px-4">
                                        View Details
                                    </a>
                                </div>
                            </div>
                        </div>
-                       <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card-furniture1 text-center d-flex flex-column"
-                        style="background-image: url('frontend/images/kursi.jpg');">
-                            <div class="furniture-nama1">
-                                KURSI
-                            </div>
-                            <div class="furniture-button mt-auto">
-                                <a href="{{ route('detail') }}" class="btn btn-furniture-details px-4">
-                                    View Details
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card-furniture1 text-center d-flex flex-column"
-                        style="background-image: url('frontend/images/kursi.jpg');">
-                            <div class="furniture-nama1">
-                                KURSI
-                            </div>
-                            <div class="furniture-button mt-auto">
-                                <a href="{{ route('detail') }}" class="btn btn-furniture-details px-4">
-                                    View Details
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card-furniture1 text-center d-flex flex-column"
-                        style="background-image: url('frontend/images/kursi.jpg');">
-                            <div class="furniture-nama1">
-                                KURSI
-                            </div>
-                            <div class="furniture-button mt-auto">
-                                <a href="{{ route('detail') }}" class="btn btn-furniture-details px-4">
-                                    View Details
-                                </a>
-                            </div>
-                        </div>
-                    </div> 
+                       @endforeach
                     </div>
                 </div>
+                
+                    
+                
+                
             </section>
         </div>
     </section>

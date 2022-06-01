@@ -1,5 +1,5 @@
 @extends('dashboard')
-@section('konten')
+@section('index')
 
 <section class="home-section">
     <nav>

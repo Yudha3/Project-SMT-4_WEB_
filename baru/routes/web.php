@@ -42,3 +42,15 @@ Route::get('/transaksimasuk', function () {
 Route::get('/transaksikeluar', function () {
     return view('transaksikeluar');
 });
+
+Route::get('/preorder', function () {
+    return view('preorder');
+});
+
+Route::get('/laporanmasuk', function () {
+    return view('laporanmasuk');
+});
+
+Route::get('/laporankeluar', function () {
+    return view('laporankeluar');
+});

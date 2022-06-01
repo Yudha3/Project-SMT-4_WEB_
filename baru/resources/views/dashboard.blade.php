@@ -11,16 +11,22 @@
   <!-- Boxicons CDN Link -->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css" />
+  <link rel="stylesheet" href="assets/datepicker/css/datepicker.css">
 </head>
 
 <body>
     @include('tampilan.sidebar')
-    @yield('konten')
+    @yield('index')
     @yield('product')
     @yield('mitra')
     @yield('reseller')
     @yield('transaksimasuk')
     @yield('transaksikeluar')
+    @yield('preorder')
+    @yield('laporanmasuk')
+    @yield('laporankeluar')
 
   <script>
     let sidebar = document.querySelector(".sidebar");

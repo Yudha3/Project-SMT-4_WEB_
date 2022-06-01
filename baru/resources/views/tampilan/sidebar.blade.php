@@ -41,19 +41,19 @@
         </a>
       </li>
       <li>
-        <a href="preOrder.php" class="">
+        <a href="/preorder" class="">
           <i class='bx bxs-basket'></i>
           <span class="links_name">Pre Order</span>
         </a>
       </li>
       <li>
-        <a href="reportMasuk.php" class="">
+        <a href="/laporanmasuk" class="">
           <i class='bx bxs-archive-in'></i>
           <span class="links_name">Laporan Masuk</span>
         </a>
       </li>
       <li>
-        <a href="reportKeluar.php" class="">
+        <a href="/laporankeluar" class="">
           <i class='bx bxs-archive-out'></i>
           <span class="links_name">Laporan Keluar</span>
         </a>

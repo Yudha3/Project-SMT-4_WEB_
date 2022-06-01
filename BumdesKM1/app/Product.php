@@ -11,8 +11,8 @@ class Product extends Model
     use SoftDeletes;
     
     protected $fillable = [
-        'nama_brg', 'tgl_mskBrg', 'hrg_beli', 'hrg_jual',
-        'stok', 'deskripsi'
+        'title', 'description', 'materials', 'price_buy',
+        'price', 'stock', 'weight', 'sold', 'image'
     ];
 
     protected $hidden = [
@@ -20,6 +20,6 @@ class Product extends Model
     ];
 
     public function galleries() {
-        return $this->hasMany(Gallery::class, 'product_id', 'id');
+        return $this->hasMany(Gallery::class, 'products_id', 'id');
     }
 }

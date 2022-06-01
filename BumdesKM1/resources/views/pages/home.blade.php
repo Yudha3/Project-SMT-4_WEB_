@@ -16,7 +16,7 @@
         <br/>
         Dont worry because we are here to help you
     </p>
-    <a href="#" class="btn btn-get-started px-4 mt-4">
+    <a href="#popular" class="btn btn-get-started px-4 mt-4">
         Get Started
     </a>
 </header>
@@ -48,58 +48,22 @@
     <section class="section-popular-content" id="popularContent">
         <div class="container">
             <div class="section-popular-furniture row justify-content-center">
-               <div class="col-sm-6 col-md-4 col-lg-3">
-                   <div class="card-furniture text-center d-flex flex-column"
-                   style="background-image: url('frontend/images/kursi.jpg');">
-                       <div class="furniture-nama">
-                           KURSI
-                       </div>
-                       <div class="furniture-button mt-auto">
-                           <a href="{{ route('detail') }}" class="btn btn-furniture-details px-4">
-                               View Details
-                           </a>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card-furniture text-center d-flex flex-column"
-                style="background-image: url('frontend/images/kursi.jpg');">
-                    <div class="furniture-nama">
-                        KURSI
+               @foreach ($items as $item)
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-furniture text-center d-flex flex-column"
+                            style="background-image: url('{{ $item->galleries->count() ? Storage::url
+                            ($item->galleries->first()->image) : '' }}');">
+                            <div class="furniture-nama">
+                                {{ $item->title }}
+                            </div>
+                            <div class="furniture-button mt-auto">
+                                <a href="{{ route('detail', $item->id) }}" class="btn btn-furniture-details px-4">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="furniture-button mt-auto">
-                        <a href="{{ route('detail') }}" class="btn btn-furniture-details px-4">
-                            View Details
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card-furniture text-center d-flex flex-column"
-                style="background-image: url('frontend/images/kursi.jpg');">
-                    <div class="furniture-nama">
-                        KURSI
-                    </div>
-                    <div class="furniture-button mt-auto">
-                        <a href="{{ route('detail') }}" class="btn btn-furniture-details px-4">
-                            View Details
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card-furniture text-center d-flex flex-column"
-                style="background-image: url('frontend/images/kursi.jpg');">
-                    <div class="furniture-nama">
-                        KURSI
-                    </div>
-                    <div class="furniture-button mt-auto">
-                        <a href="{{ route('detail') }}" class="btn btn-furniture-details px-4">
-                            View Details
-                        </a>
-                    </div>
-                </div>
-            </div> 
+               @endforeach
             </div>
         </div>
     </section>
@@ -119,7 +83,7 @@
             <div class="section-stats row justify-content-left" id="stats">
                 <div class="col-3 col-md-2 stats-detail">
                     <h2>
-                        15
+                        {{ $product }}
                     </h2>
                     <p>
                         Product
@@ -127,7 +91,7 @@
                 </div>
                 <div class="col-3 col-md-2 stats-detail">
                     <h2>
-                        10
+                        {{ $transactionout_success }}
                     </h2>
                     <p>
                         Product Populer
@@ -140,7 +104,8 @@
         <div class="container">
             <div class="col-sm-6 col-md-4 col-lg-7">
                 <div class="card-furniture justify-content-center text-center d-flex flex-column"
-                style="background-image: url('frontend/images/kursi.jpg');">
+                style="background-image: url('{{ $item->galleries->count() ? Storage::url
+                    ($item->galleries->first()->image) : '' }}');">
                     
                 </div>
             </div>
@@ -184,10 +149,6 @@
                                 listed surrounds, a perfect blend."
                             </p>
                         </div>
-                        <hr>
-                        <p class="produk mt-2">
-                            Kursi
-                        </p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-4">
@@ -209,10 +170,6 @@
                                 listed surrounds, a perfect blend."
                             </p>
                         </div>
-                        <hr>
-                        <p class="produk mt-2">
-                            Kursi
-                        </p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-4">
@@ -234,10 +191,6 @@
                                 listed surrounds, a perfect blend."
                             </p>
                         </div>
-                        <hr>
-                        <p class="produk mt-2">
-                            Kursi
-                        </p>
                     </div>
                 </div>
             </div>
@@ -246,7 +199,7 @@
                     <a href="#" class="btn btn-need-help px-4 mt-4 mx-1">
                         I Need Help
                     </a>
-                    <a href="#" class="btn btn-get-started px-4 mt-4 mx-1">
+                    <a href="{{ route('register') }}" class="btn btn-get-started px-4 mt-4 mx-1">
                         Get Started
                     </a>
                 </div>

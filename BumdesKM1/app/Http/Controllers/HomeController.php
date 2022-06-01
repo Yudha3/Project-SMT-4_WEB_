@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Product;
+use App\TransactionOut;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -13,6 +14,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('pages.home');
+        $items = Product::with(['galleries'])->get();
+        return view('pages.home', [
+            'items' => $items,
+            'product' => Product::count(),
+            'transactionout_success' => TransactionOut::where('status', 'SUCCESS')->count()
+        ]);
     }
 }

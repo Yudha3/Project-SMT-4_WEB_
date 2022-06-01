@@ -43,7 +43,10 @@ class MitraController extends Controller
     public function store(MitraRequest $request)
     {
         $data = $request->all();
-        $data['slug'] = Str::slug($request->nm_mitra);
+        $data['slug'] = Str::slug($request->nama_mtr);
+        $data['image'] = $request->file('image')->store(
+            'assets/mitra', 'public'
+        );
 
         Mitra::create($data);
         return redirect()->route('mitra.index');
@@ -85,7 +88,10 @@ class MitraController extends Controller
     public function update(MitraRequest $request, $id)
     {
         $data = $request->all();
-        $data['slug'] = Str::slug($request->nm_mitra);
+        $data['slug'] = Str::slug($request->nama_mtr);
+        $data['image'] = $request->file('image')->store(
+            'assets/mitra', 'public'
+        );
 
         $item = Mitra::findOrFail($id);
         $item->update($data);

@@ -24,10 +24,11 @@ class MitraRequest extends FormRequest
     public function rules()
     {
         return [
-            'nm_mitra' => 'required|max:255',
+            'nama_mtr' => 'required|max:255',
             'alamat' => 'required|max:255',
-            'no_tlp' => 'required|integer',
-            'tgl_gabung' => 'required|date'
+            'no_telp' => 'required|max:12',
+            'tgl_gabung' => 'required|date',
+            'image' => 'required|image'
         ];
     }
 }

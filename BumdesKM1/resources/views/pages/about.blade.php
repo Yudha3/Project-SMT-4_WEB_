@@ -24,101 +24,63 @@
             <div class="row">
                 <div class="col-lg-15 pl-lg-0">
                     <div class="card card-details">
+                        @foreach ($items as $item)
                         <h1>
                             BUMDES KARYA MANDIRI
                         </h1>
                         <div class="gallery">
                             <div class="xzoom-container">
-                                <img src="frontend/images/unsplash1.jpg" class="xzoom" id="xzoom-default" xoriginal="frontend/images/unsplash1.jpg" width="660" height="350">
-                            </div>
-                            <div class="xzoom-thumbs">
-                                <a href="frontend/images/unsplash2.jpg">
-                                    <img src="frontend/images/unsplash2.jpg" class="xzoom-gallery" width="128" xpreview="frontend/images/unsplash2.jpg">
-                                </a>
-                                <a href="frontend/images/unsplash2.jpg">
-                                    <img src="frontend/images/unsplash2.jpg" class="xzoom-gallery" width="128" xpreview="frontend/images/unsplash2.jpg">
-                                </a>
-                                <a href="frontend/images/unsplash2.jpg">
-                                    <img src="frontend/images/unsplash2.jpg" class="xzoom-gallery" width="128" xpreview="frontend/images/unsplash2.jpg">
-                                </a>
-                                <a href="frontend/images/unsplash2.jpg">
-                                    <img src="frontend/images/unsplash2.jpg" class="xzoom-gallery" width="128" xpreview="frontend/images/unsplash2.jpg">
-                                </a>
-                                <a href="frontend/images/unsplash2.jpg">
-                                    <img src="frontend/images/unsplash2.jpg" class="xzoom-gallery" width="128" xpreview="frontend/images/unsplash2.jpg">
-                                </a>
+                                <img src="{{ url('storage') }}/{{ $item->image }}" class="xzoom" id="xzoom-default" xoriginal="{{ url('storage') }}/{{ $item->image }}" width="660" height="350">
                             </div>
                         </div>
                         <h2>
-                            Deskripsi Product
+                            Deskripsi
                         </h2>
                         <p>
-                            Kursi Rotan Sintetis adalah sejenis kursi 
-                            tamu yang didesain khusus untuk memberikan 
-                            kenyamanan berlebih kepada pemakainya, bentuk 
-                            kursi yang melingkar dengan lapisan busa empuk 
-                            diatasnya sudah diperhitungkan dengan teliti. 
-                            hal ini bertujuan mendapatkan kepuasan dalam 
-                            penggunaan produk kami. Sebagai tempat untuk 
-                            bersanta Kursi Rotan dibuat senyaman mungkin hingga 
-                            memberikan kesan kepada orang yang menempatinya.
+                            {{ $item->description }}
                         </p>
                         <div class="features row">
                             <div class="col-md-4">
                                 
-                                    <img src="frontend/images/ic_event.png" alt="" class="features-image">
+                                    <img src="{{ url('frontend/images/ic_event.png') }}" alt="" class="features-image">
                                 
                                 <div class="description">
                                     <h3>
-                                        Bahan
+                                        Pengelola
                                     </h3>
                                     <p>
-                                        Rotan Sintetis
+                                        {{ $item->pengelola }}
                                     </p>
                                 </div>
                             </div>
                             <div class="col-md-4 border-left">
                                 
-                                    <img src="frontend/images/ic_event.png" alt="" class="features-image">
+                                    <img src="{{ url('frontend/images/ic_event.png') }}" alt="" class="features-image">
                                
                                 <div class="description">
                                     <h3>
-                                        Warna
+                                        Contact
                                     </h3>
                                     <p>
-                                        Custom
+                                        {{ $item->contact }}
                                     </p>
                                 </div>
                             </div>
                             <div class="col-md-4 border-left">
                                
-                                    <img src="frontend/images/ic_event.png" alt="" class="features-image">
+                                    <img src="{{ url('frontend/images/ic_event.png') }}" alt="" class="features-image">
                                 
                                 <div class="description">
                                     <h3>
-                                        Include
+                                        Alamat
                                     </h3>
                                     <p>
-                                        Kursi 2
-                                        <br/>
-                                        Bantalan busa
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                
-                                    <img src="frontend/images/ic_event.png" alt="" class="features-image">
-                                
-                                <div class="description">
-                                    <h3>
-                                        Harga
-                                    </h3>
-                                    <p>
-                                        Rp 100.000
+                                        {{ $item->address }}
                                     </p>
                                 </div>
                             </div>
                         </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -135,7 +97,7 @@
 <script src="{{ url('frontend/library/xzoom/xzoom.min.js') }}"></script>
 <script>
     $(document).ready(function() {
-        $('.xzoom, xzoom-gallery').xzoom({
+        $('.xzoom, .xzoom-gallery').xzoom({
             zoomWidth: 500,
             title: false,
             tint: '#333',

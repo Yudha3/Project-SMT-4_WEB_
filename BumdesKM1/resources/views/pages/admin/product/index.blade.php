@@ -20,11 +20,12 @@
                         <tr>
                             <th>ID</th>
                             <th>Nama Barang</th>
-                            <th>Tanggal Masuk</th>
-                            <th>Harga Beli</th>
+                            <th>Deskripsi</th>
+                            <th>Bahan</th>
                             <th>Harga Jual</th>
                             <th>Stok</th>
-                            <th>Deskripsi</th>
+                            <th>Terjual</th>
+                            <th>Gambar</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -32,12 +33,15 @@
                         @forelse ($items as $item)
                             <tr>
                                 <td>{{ $item->id }}</td>
-                                <td>{{ $item->nama_brg }}</td>
-                                <td>{{ $item->tgl_mskBrg }}</td>
-                                <td>{{ $item->hrg_beli }}</td>
-                                <td>{{ $item->hrg_jual }}</td>
-                                <td>{{ $item->stok }}</td>
-                                <td>{{ $item->deskripsi }}</td>
+                                <td>{{ $item->title }}</td>
+                                <td>{{ $item->description }}</td>
+                                <td>{{ $item->materials }}</td>
+                                <td>{{ $item->price }}</td>
+                                <td>{{ $item->stock }}</td>
+                                <td>{{ $item->sold }}</td>
+                                <td>
+                                    <img src="{{ Storage::url($item->image) }}" alt="" style="width: 150px" class="img-thumbnail" />
+                                </td>
                                 <td>
                                     <a href="{{ route('product.edit', $item->id) }}" class="btn btn-info">
                                         <i class="fa fa-pencil-alt"></i>

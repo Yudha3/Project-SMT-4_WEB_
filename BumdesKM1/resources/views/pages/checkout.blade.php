@@ -32,47 +32,52 @@
                         <div class="alamat mt-3">
                             <h2>Alamat</h2>
                             <form action="" class="form-inline">
-                                <label for="inputAlamat" class="sr-only">Alamat</label>
-                                <input type="text" class="form-control mb-2 mr-sm-2" id="inputAlamat" placeholder="Alamat">
+                                <label for="alamat" class="sr-only">Alamat</label>
+                                <textarea name="alamat" rows="10" class="d-block w-100 form-control">{{ old('alamat') }}</textarea>
                             </form>
                         </div>
-                        <div class="pengiriman mt-3">
-                            <h2>Opsi Pengiriman</h2>
+                        <div class="phone mt-3">
+                            <h2>Alamat</h2>
                             <form action="" class="form-inline">
-                                <label for="inputPengiriman" class="sr-only">Pengiriman</label>
-                                <select name="inputPengiriman" id="inputPengiriman" class="custom-select mb-2 mr-sm-2">
-                                    <option value="Pengiriman" selected>Pengiriman</option>
-                                    <option value="JNE">JNE</option>
-                                    <option value="J&T">J&T</option>
-                                    <option value="Si Cepat">Si Cepat</option>
-                                    <option value="Anteraja">Anteraja</option>
-                                    <option value="Pos Indonesia">Pos Indonesia</option>
-
-                                </select>
+                                <label for="phone" class="sr-only">Nomor Telepon</label>
+                                <input type="number" class="form-control" name="phone" placeholder="Nomor Telepon" value="{{ old('phone') }}">
                             </form>
                         </div>
-                        <div class="pembayaran mt-3">
-                            <h2>Pembayaran</h2>
+                        <div class="qty mt-3">
+                            <h2>Alamat</h2>
                             <form action="" class="form-inline">
-                                <label for="inputPembayaran" class="sr-only">Pembayaran</label>
-                                <select name="inputPembayaran" id="inputPembayaran" class="custom-select mb-2 mr-sm-2">
-                                    <option value="Bank" selected>Bank</option>
-                                    <option value="BNI">BNI</option>
-                                    <option value="BCA">BCA</option>
-                                    <option value="BRI">BRI</option>
-                                    <option value="Mandiri">Mandiri</option>
-                                    <option value="CIMB NIAGA">CIMB NIAGA</option>
-
-                                </select>
+                                <label for="qty" class="sr-only">Quantity</label>
+                                <input type="number" class="form-control" name="qty" placeholder="Quantity" value="{{ old('qty') }}">
                             </form>
                         </div>
-                        <div class="note mt-3">
+                        {{--  <div class="member mt-3">
+                            <form class="form-inline">
+                                <label class="sr-only" for="pengiriman">Pengiriman</label>
+                                <select class="custom-select mb-2 mr-sm-2" id="inlineFormCustomSelectPref">
+                                    <option selected value="">Pengiriman</option>
+                                    <option value="2">JNE</option>
+                                    <option value="3">J&T</option>
+                                </select>
+            
+                                <label class="sr-only" class="mr-2" for="inlineFormCustomSelectPref">Pembayaran</label>
+                                <select class="custom-select mb-2 mr-sm-2" id="inlineFormCustomSelectPref">
+                                  <option selected value="">BANK</option>
+                                  <option value="2">30 Days</option>
+                                  <option value="3">N/A</option>
+                                </select>
+            
+                                <button type="submit" class="btn btn-add-now mb-2 px-4">
+                                  Add Now
+                                </button>
+                            </form>
+                        </div>  --}}
+                        {{--  <div class="note mt-3">
                             <h2>Catatan</h2>
                             <form action="" class="form-inline">
-                                <label for="inputCatatan" class="sr-only">Catatan</label>
-                                <input type="text" class="form-control mb-2 mr-sm-2" id="inputCatatan" placeholder="Catatan">
+                                <label for="catatan" class="sr-only">Catatan</label>
+                                <textarea name="catatan" rows="3" class="d-block w-100 form-control">{{ old('catatan') }}</textarea>
                             </form>
-                        </div>
+                        </div>  --}}
                     </div>
                 </div>
                 <div class="col-lg-4">

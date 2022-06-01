@@ -2,7 +2,7 @@
     <nav class="row navbar navbar-expand-lg navbar-light bg-white">
         <a href="{{ route('home') }}" class="navbar-brand">
             {{--  BumdesKM  --}}
-            <img src="frontend/images/logo.png" alt="Logo Kematif">
+            <img src="{{ url('frontend/images/logo.png') }}" alt="Logo Bumdes">
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
             <span class="navbar-toggler-icon"></span>
@@ -11,16 +11,16 @@
         <div class="collapse navbar-collapse" id="navb">
             <ul class="navbar-nav ml-auto mr-3">
                 <li class="nav-item mx-md-2">
-                    <a href="{{ route('home') }}" class="nav-link active">Home</a>
+                    <a href="{{ route('home') }}" class="nav-link {{ Request::is('/') ? 'active' : '' }}">Home</a>
                 </li>
                 <li class="nav-item mx-md-2">
-                    <a href="{{ route('product') }}" class="nav-link">Product</a>
+                    <a href="{{ route('product') }}" class="nav-link {{ Request::is('product') ? 'active' : '' }}">Product</a>
                 </li>
                 <li class="nav-item mx-md-2">
-                    <a href="{{ route('mitra') }}" class="nav-link">Mitra</a>
+                    <a href="{{ route('mitra') }}" class="nav-link {{ Request::is('mitra') ? 'active' : '' }}">Mitra</a>
                 </li>
                 <li class="nav-item mx-md-2">
-                    <a href="{{ route('about') }}" class="nav-link">About</a>
+                    <a href="{{ route('about') }}" class="nav-link {{ Request::is('about') ? 'active' : '' }}">About</a>
                 </li>
 
             </ul>

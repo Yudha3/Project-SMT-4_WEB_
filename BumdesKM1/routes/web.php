@@ -23,14 +23,28 @@ Route::get('/mitra', 'MitraController@index')
 Route::get('/about', 'AboutController@index')
     ->name('about');
     
-Route::get('/detail', 'DetailController@index')
+Route::get('/detail/{id}', 'DetailController@index')
     ->name('detail');
 
-Route::get('/checkout', 'CheckoutController@index')
-    ->name('checkout');
+Route::post('/checkout/{id}', 'CheckoutController@process')
+    ->name('checkout_process')
+    ->middleware(['auth','verified']);
 
-Route::get('/checkout/success', 'CheckoutController@success')
-    ->name('checkout-success');
+Route::get('/checkout/{id}', 'CheckoutController@index')
+    ->name('checkout')
+    ->middleware(['auth','verified']);
+
+Route::post('/checkout/create/{detail_id}', 'CheckoutController@create')
+    ->name('checkout-create')
+    ->middleware(['auth','verified']);
+
+Route::get('/checkout/remove/{detail_id}', 'CheckoutController@remove')
+    ->name('checkout-remove')
+    ->middleware(['auth','verified']);
+
+Route::get('/checkout/confirm/{id}', 'CheckoutController@success')
+    ->name('checkout-success')
+    ->middleware(['auth','verified']);
 
 Route::prefix('admin')
     ->namespace('Admin')
@@ -42,6 +56,10 @@ Route::prefix('admin')
         Route::resource('product', 'ProductController');
         Route::resource('gallery', 'GalleryController');
         Route::resource('mitra', 'MitraController');
+        Route::resource('about', 'AboutController');
+        Route::resource('transactionin', 'TransactionInController');
+        Route::get('ajax', [TransactionInController::class, 'ajax']);
+        Route::resource('transactionout', 'TransactionOutController');
     });
 Auth::routes(['verify' => true]);
 

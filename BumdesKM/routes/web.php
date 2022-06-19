@@ -66,7 +66,6 @@ Route::prefix('admin')
         Route::resource('about', 'AboutController');
         Route::resource('user', 'UserController');
         Route::resource('transactionin', 'TransactionInController');
-        Route::get('ajax', [TransactionInController::class, 'ajax']);
         Route::resource('transactionout', 'TransactionOutController');
         Route::resource('reportin', 'ReportInController');
 

@@ -41,7 +41,7 @@ Route::post('/user/edit/photo', [UsersController::class, 'editPhoto']);
 Route::get('/products', [ProductsController::class, 'getAllProduct']);
 Route::get('/products/bestseller', [ProductsController::class, 'getBestSeller']);
 Route::get('/products/bestseller/all', [ProductsController::class, 'getAllBestSeller']);
-Route::get('/product/show/{id}', [ProductsController::class, 'getDetailProduct']);
+Route::get('/product/show/{id}', [ProductsController::class, 'getDetailProduct'])->name('getProductDetail');
 Route::get('/product/images/{id}', [GalleryController::class, 'getImage']);
 
 Route::get('/carts/user/{id}', [CartController::class, 'getCarts']);

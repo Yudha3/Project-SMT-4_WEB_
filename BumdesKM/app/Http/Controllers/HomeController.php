@@ -15,7 +15,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $items = Product::with(['galleries'])->get();
+        $items = Product::orderBy('sold', 'DESC')->get();
         $reviews = Review::with(['transaction', 'user'])->get();
         return view('pages.home', [
             'items' => $items,
